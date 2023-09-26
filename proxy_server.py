@@ -41,7 +41,7 @@ def handle_connection(conn, addr):
                 break
             request += data
         print ("Client sent : ",request.decode('utf-8'))
-        response = send_request("www.google.com",80,request)
+        response = send_request("https://www.google.com",80,request)
         conn.sendall(response)
 
 
