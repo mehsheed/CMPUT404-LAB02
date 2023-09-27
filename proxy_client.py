@@ -29,7 +29,7 @@ def get_ip(host):
 
 def get (host,port):
 
-    request = b"GET / HTTP/1.1\nHost: " + host.encode('utf-8') + b"\n\n"
+    request = b"GET / HTTP/1.1\nHost: www.google.com\n\n" + host.encode('utf-8') + b"\n\n"
 
     s = create_tcp_socket()
 
